@@ -11,6 +11,8 @@ namespace DemoKartBL
         //enum Categories {electronics=1, grocery, clothing, cosmetic }
 
         public String categories;
+        public int categoriesId;
+        public double totalPrice = 0;
         public Category()
         {
             categories = null;
@@ -19,30 +21,30 @@ namespace DemoKartBL
         {
             this.categories = categories;
         }
-        public double CalculatePrice(int type, double price)
+        public double CalculatePrice(int type, double price,int Quantity)
         {
             if (type == 1)
             {
-                double totalPrice = 0;
+                price = price * Quantity;
                 totalPrice = price + (price * 0.18);
                 return totalPrice;
             }
             else if (type == 2)
             {
-                double totalPrice = 0;
+                price = price * Quantity;
                 totalPrice = price + ( price * 0.04);
                 return totalPrice;
             }
             else if (type == 3)
             {
-                double totalPrice = 0;
+                price = price * Quantity;
                 totalPrice = price + (price * 0.07);
                 return totalPrice;
             }
             else if (type == 4)
             {
-                double totalPrice = 0;
-                totalPrice = price +(price * 0.18);
+                price = price * Quantity;
+                totalPrice = price + (price * 0.18);
                 return totalPrice;
             }
             else
@@ -53,4 +55,6 @@ namespace DemoKartBL
 
     }
 }
+
+
 
