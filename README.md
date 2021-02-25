@@ -11,7 +11,8 @@ PROJECT PURPOSE:
 
 FOLDER STRUCTURE:
 
-Folder	                        Description
+Folder	                                        Description
+                                               
 Requirements	                Documents detailing requirements and research
 Design                  	Documents specifying design details
 Implementation	                All code and documentation
