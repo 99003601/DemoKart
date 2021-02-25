@@ -20,7 +20,7 @@ Implementation	                All code and documentation
 CONTRIBUTOR LIST
 Name	                                  PS No.				
 1) Abhilipsa Bal	               99003590				
-2) Nareshmanjunath Moger	99003601				
+2) Nareshmanjunath Moger	       99003601				
 					
 
 
