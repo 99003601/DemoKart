@@ -259,7 +259,7 @@ namespace DemoKartMainProgram
 
                     if (num2 == 1)
                     {
-                        Console.WriteLine("Enter The Product Id You Want To Delete");
+                        Console.WriteLine("Enter The Product Id of the product You Want To Delete");
                         int PI = Convert.ToInt32(Console.ReadLine());
                         foreach (Product item in CartList)
                         {
