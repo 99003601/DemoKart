@@ -9,4 +9,4 @@ PROPOSED SYSTEM:
 
 STRUCTURAL CLASS DIAGRAM:
 
-![C:\Users\Training\AppData\Local\Microsoft\Windows\INetCache\Content.Word\cd3.png](Aspose.Words.9b08715b-1f1d-45ef-bec6-176de51f600c.001.png)
+![](Aspose.Words.bc7d920b-e9ef-4a8b-9770-8a567cbb90f7.001.png)
