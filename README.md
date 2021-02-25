@@ -9,13 +9,6 @@ PROJECT PURPOSE:
 
 •	The objective of this project is to develop a general purpose e-commerce store where product like clothes can be bought from the comfort of home through the Internet.
 
-FOLDER STRUCTURE:
-
-Folder	                                        Description
-                                               
-Requirements	                Documents detailing requirements and research
-Design                  	Documents specifying design details
-Implementation	                All code and documentation
 
 CONTRIBUTOR LIST
 Name	                                  PS No.				
