@@ -4,3 +4,15 @@ D:\Content\ProgrammingUsingC#\DemoKart\DemoKart\DemoKartBL\obj\Debug\DemoKartBL.
 D:\Content\ProgrammingUsingC#\DemoKart\DemoKart\DemoKartBL\obj\Debug\DemoKartBL.csproj.CoreCompileInputs.cache
 D:\Content\ProgrammingUsingC#\DemoKart\DemoKart\DemoKartBL\obj\Debug\DemoKartBL.dll
 D:\Content\ProgrammingUsingC#\DemoKart\DemoKart\DemoKartBL\obj\Debug\DemoKartBL.pdb
+C:\Users\Training\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\bin\Debug\DemoKartBL.dll
+C:\Users\Training\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\bin\Debug\DemoKartBL.pdb
+C:\Users\Training\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\obj\Debug\DemoKartBL.csprojAssemblyReference.cache
+C:\Users\Training\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\obj\Debug\DemoKartBL.csproj.CoreCompileInputs.cache
+C:\Users\Training\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\obj\Debug\DemoKartBL.dll
+C:\Users\Training\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\obj\Debug\DemoKartBL.pdb
+C:\Users\admin\OneDrive\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\bin\Debug\DemoKartBL.dll
+C:\Users\admin\OneDrive\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\bin\Debug\DemoKartBL.pdb
+C:\Users\admin\OneDrive\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\obj\Debug\DemoKartBL.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\obj\Debug\DemoKartBL.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\obj\Debug\DemoKartBL.dll
+C:\Users\admin\OneDrive\Desktop\DemoKart-main\DemoKart-main\DemoKartBL\obj\Debug\DemoKartBL.pdb

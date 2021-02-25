@@ -8,14 +8,27 @@ namespace DemoKartBL
 {
     public class User
     {
+        public String UserName { get; set; }
+        public String Password { get; set; }
         public String firstName { get; set; }
         public String lastName { get; set; }
         public DateTime Dob { get; set; }
-        public int mobileNo { get; set; }
+        public long mobileNo { get; set; }
 
-        public int Login(String UserName, String Password)
+        public User()
         {
-            if (UserName == "User" && Password == "pass")
+
+        }
+        public User(String UserName,String Password,DateTime Dob,long mobileNo)
+        {
+            this.UserName = UserName;
+            this.Password = Password;
+            this.Dob = Dob;
+            this.mobileNo = mobileNo;
+        }
+        public int Login(String uName, String psword)
+        {
+            if (uName == UserName && psword == Password)
             {
                 return 1;
             }

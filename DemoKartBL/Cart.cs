@@ -13,16 +13,7 @@ namespace DemoKartBL
 
         public int AddToCart(int Quantity)
         {
-            if (Quantity > 10)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
-
+            return 1;
         }
     }
 }
-

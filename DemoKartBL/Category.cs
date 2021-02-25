@@ -8,19 +8,23 @@ namespace DemoKartBL
 {
     public class Category
     {
-        //enum Categories {electronics=1, grocery, clothing, cosmetic }
+ 
 
-        public String categories;
-        public int categoriesId;
+        public int categoriesId { get; set; }
+        public String categories { get; set; }
+
         public double totalPrice = 0;
         public Category()
         {
             categories = null;
         }
-        public Category(String categories)
+        public Category(int categoriesId, String categories)
         {
             this.categories = categories;
+            this.categoriesId = categoriesId;
         }
+
+
         public double CalculatePrice(int type, double price,int Quantity)
         {
             if (type == 1)
@@ -55,6 +59,4 @@ namespace DemoKartBL
 
     }
 }
-
-
 

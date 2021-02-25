@@ -22,7 +22,7 @@ namespace DemoKartBL
                 double Price = 0;
                 Price = price + (price * 0.035) ;
                 return Price;
-            }
+            }   
         }
         public double CalculateSGST(int num, double price)
         {
@@ -41,4 +41,3 @@ namespace DemoKartBL
         }
     }
 }
-
