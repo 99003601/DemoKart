@@ -14,13 +14,13 @@ namespace DemoKartBL
             if (num == (int)Mode.ByCash)
             {
                 double Price = 0;
-                Price = price * 0.18;
+                Price = price;
                 return Price;
             }
             else
             {
                 double Price = 0;
-                Price = price * 0.035 * 0.18;
+                Price = price + (price * 0.035) ;
                 return Price;
             }
         }
@@ -41,3 +41,4 @@ namespace DemoKartBL
         }
     }
 }
+
