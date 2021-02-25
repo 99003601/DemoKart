@@ -20,42 +20,49 @@ namespace DemoKartMainProgram
             
             Product[] ProductObj = new Product[20];
             Cart CartObj = new Cart();
+            Order OrderObj = new DemoKartBL.Order();
             Category categoryObj = new Category();
             Payment paymentObj = new Payment();
-            int num,num1,num3,num4,id;
+            int num,num1,num2,num3,num4,id;
             double TotalPrice=0, TotalPrice1 = 0, TotalPrice2 = 0, TotalPrice3 = 0, TotalPrice4 = 0;
             double GrandTotal1 = 0, GrandTotal2 = 0;
             User UserObj = new User();
-            Console.WriteLine("Welcome");
+            Console.WriteLine("Welcome to our World");
             Console.WriteLine("Enter User name");
             String UserName = Console.ReadLine();
             Console.WriteLine("Enter Password");
             String Password = Console.ReadLine();
             int value = UserObj.Login(UserName, Password);
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 5; i++)
             {
-                ProductObj[0] = new Product(1, "APPLE", 50, 7);
-                ProductObj[1] = new Product(2, "ORANGE", 70, 6);
+                ProductObj[0] = new Product(1, "Iphone", 1000, 5);
+                ProductObj[1] = new Product(2, "mi 10", 1000, 2);
+                ProductObj[2] = new Product(3, "TV", 500, 10);
+                ProductObj[3] = new Product(4, "Watch", 100, 12);
+                ProductObj[4] = new Product(5, "Fan", 500, 5);
                 ProductList1.Add(ProductObj[i]);
             }
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 5; i++)
             {
-                ProductObj[0] = new Product(3, "WATERMELON", 50, 5);
-                ProductObj[1] = new Product(4, "MANGO", 60, 2);
+                ProductObj[0] = new Product(6, "WATERMELON", 20, 5);
+                ProductObj[1] = new Product(7, "MANGO", 80, 5);
+                ProductObj[2] = new Product(8, "Grapes", 80, 2);
+                ProductObj[3] = new Product(9, "Potato", 30, 3);
+                ProductObj[4] = new Product(10,"Tomato", 20, 4);
 
                 ProductList2.Add(ProductObj[i]);
             }
             for (int i = 0; i < 2; i++)
             {
-                ProductObj[0] = new Product(5, "PINEAPPLE", 55, 6);
-                ProductObj[1] = new Product(6, "STRAWBERRY", 70, 4);
+                ProductObj[0] = new Product(11, "Shirt", 200, 5);
+                ProductObj[1] = new Product(12, "Saree", 300, 5);
 
                 ProductList3.Add(ProductObj[i]);
             }
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 4; i++)
             {
-                ProductObj[0] = new Product(7, "GRAPES", 60, 7);
-                ProductObj[1] = new Product(8, "TOMATO", 40, 8);
+                ProductObj[0] = new Product(13, "japani tel", 60, 7);
+                ProductObj[1] = new Product(14, "lipsticks", 40, 8);
 
                 ProductList4.Add(ProductObj[i]);
             }
@@ -73,11 +80,7 @@ namespace DemoKartMainProgram
                         foreach (Product item in ProductList1)
                         {
 
-                            Console.WriteLine("Product id : " + item.productId);
-                            Console.WriteLine("Product Name : " + item.productName);
-                            Console.WriteLine("Product Price : " + item.price);
-                            Console.WriteLine("Product Quantity : " + item.quantity);
-                            Console.WriteLine("\n");
+                            Console.WriteLine("Product id : " + item.productId+ "\tProduct Name : " + item.productName+ "\tProduct Price : " + item.price+ "\tProduct Quantity : " + item.quantity);
                         }
                         Console.WriteLine("1.Add To Cart\t2.Continue");
                         num1 = Convert.ToInt32(Console.ReadLine());
@@ -100,8 +103,9 @@ namespace DemoKartMainProgram
                                     }
                                     else
                                     {
-                                        TotalPrice1 = categoryObj.CalculatePrice(Choice, item.price);
-                                        Product cust_cart = new Product(item.productId, item.productName, item.price, item.quantity);
+                                        double TotalPric = categoryObj.CalculatePrice(Choice, item.price, quant);
+                                        TotalPrice1 = TotalPrice1 + TotalPric;
+                                        Product cust_cart = new Product(item.productId, item.productName, item.price, quant);
                                         CartList.Add(cust_cart);                                     
                                         Console.WriteLine("Add To cart Is Successfull\n");
                                     }
@@ -115,11 +119,7 @@ namespace DemoKartMainProgram
                         foreach (Product item in ProductList2)
                         {
 
-                            Console.WriteLine("Product id : " + item.productId);
-                            Console.WriteLine("Product Name : " + item.productName);
-                            Console.WriteLine("Product Price : " + item.price);
-                            Console.WriteLine("Product Quantity : " + item.quantity);
-                            Console.WriteLine("\n");
+                            Console.WriteLine("Product id : " + item.productId + "\tProduct Name : " + item.productName + "\tProduct Price : " + item.price + "\tProduct Quantity : " + item.quantity);
                         }
                         Console.WriteLine("1.Add To Cart\t2.Continue");
                         num1 = Convert.ToInt32(Console.ReadLine());
@@ -142,8 +142,8 @@ namespace DemoKartMainProgram
                                     }
                                     else
                                     {
-                                        TotalPrice2 = categoryObj.CalculatePrice(Choice, item.price);
-                                        Product cust_cart = new Product(item.productId, item.productName, item.price, item.quantity);
+                                        TotalPrice2 = categoryObj.CalculatePrice(Choice, item.price, quant);
+                                        Product cust_cart = new Product(item.productId, item.productName, item.price, quant);
                                         CartList.Add(cust_cart);
                                         Console.WriteLine("Add To cart Is Successfull\n");
                                     }
@@ -158,11 +158,7 @@ namespace DemoKartMainProgram
                         foreach (Product item in ProductList3)
                         {
 
-                            Console.WriteLine("Product id : " + item.productId);
-                            Console.WriteLine("Product Name : " + item.productName);
-                            Console.WriteLine("Product Price : " + item.price);
-                            Console.WriteLine("Product Quantity : " + item.quantity);
-                            Console.WriteLine("\n");
+                            Console.WriteLine("Product id : " + item.productId + "\tProduct Name : " + item.productName + "\tProduct Price : " + item.price + "\tProduct Quantity : " + item.quantity);
                         }
                         Console.WriteLine("1.Add To Cart\t2.Continue");
                         num1 = Convert.ToInt32(Console.ReadLine());
@@ -185,8 +181,8 @@ namespace DemoKartMainProgram
                                     }
                                     else
                                     {
-                                        TotalPrice3 = categoryObj.CalculatePrice(Choice, item.price);
-                                        Product cust_cart = new Product(item.productId, item.productName, item.price, item.quantity);
+                                        TotalPrice3 = categoryObj.CalculatePrice(Choice, item.price, quant);
+                                        Product cust_cart = new Product(item.productId, item.productName, item.price, quant);
                                         CartList.Add(cust_cart);
                                         Console.WriteLine("Add To cart Is Successfull\n");
                                     }
@@ -200,11 +196,7 @@ namespace DemoKartMainProgram
                         foreach (Product item in ProductList4)
                         {
 
-                            Console.WriteLine("Product id : " + item.productId);
-                            Console.WriteLine("Product Name : " + item.productName);
-                            Console.WriteLine("Product Price : " + item.price);
-                            Console.WriteLine("Product Quantity : " + item.quantity);
-                            Console.WriteLine("\n");
+                            Console.WriteLine("Product id : " + item.productId + "\tProduct Name : " + item.productName + "\tProduct Price : " + item.price + "\tProduct Quantity : " + item.quantity);
                         }
                         Console.WriteLine("1.Add To Cart\t2.Continue");
                         num1 = Convert.ToInt32(Console.ReadLine());
@@ -227,8 +219,8 @@ namespace DemoKartMainProgram
                                     }
                                     else
                                     {
-                                        TotalPrice4 = categoryObj.CalculatePrice(Choice, item.price);
-                                        Product cust_cart = new Product(item.productId, item.productName, item.price, item.quantity);
+                                        TotalPrice4 = categoryObj.CalculatePrice(Choice, item.price,quant);
+                                        Product cust_cart = new Product(item.productId, item.productName, item.price, quant);
                                         CartList.Add(cust_cart);
                                         Console.WriteLine("Add To cart Is Successfull\n");
                                     }
@@ -260,11 +252,11 @@ namespace DemoKartMainProgram
                 Console.WriteLine("Product Quantity : " + item.quantity);
                 Console.WriteLine("\n");
             }
-
+            Console.WriteLine("1.Delete cart List\t2.Order");
+            num2 = Convert.ToInt32(Console.ReadLine());
             do
             {
-                Console.WriteLine("1.Delete cart List\t2.Payment");
-                int num2 = Convert.ToInt32(Console.ReadLine());
+                
                 if (num2 == 1)
                 {
                     Console.WriteLine("Enter Product Id To Delete");
@@ -274,6 +266,12 @@ namespace DemoKartMainProgram
                         if (PI == item.productId)
                         {
                             CartList.Remove(item);
+                            Console.WriteLine("Cart item "+PI+" Deleted");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Item is not in the Cart");
                             break;
                         }
 
@@ -282,9 +280,10 @@ namespace DemoKartMainProgram
                 }
                 else
                 {
-                    Console.WriteLine("Product not available in cart");
+                    break;
                 }
-                Console.WriteLine("1.Remove Another Cart\t2.Payment");
+                
+                Console.WriteLine("1.Remove Another Cart\t2.Order");
                 num3 = Convert.ToInt32(Console.ReadLine());
             } while (num3==1);
 
@@ -298,10 +297,27 @@ namespace DemoKartMainProgram
                 Console.WriteLine("\n");
             }
 
+            Console.WriteLine("Enter Details To Complete Order");
+            Console.WriteLine("Enter First Name : ");
+            OrderObj.firstName = Console.ReadLine();
+            Console.WriteLine("Enter Last Name : ");
+            OrderObj.lastName = Console.ReadLine();
+            Console.WriteLine("Enter Mobile Number : ");
+            OrderObj.mobileNo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Delivery Address : ");
+            OrderObj.deliveryAddress = Console.ReadLine();
+            Console.WriteLine("Enter Pincode : ");
+            OrderObj.pinCode = Convert.ToInt32(Console.ReadLine());
+
             TotalPrice = TotalPrice1 + TotalPrice2 + TotalPrice3 + TotalPrice4;
+            
             Console.WriteLine("Enter Payment method");
             Console.WriteLine("1.ByCash\t2.ByCard");
             num4 = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Order Successfully Placed..................");
+            Console.WriteLine("First Name : "+OrderObj.firstName+ "\tLast Name : " + OrderObj.lastName + "\tMobile Number : "+OrderObj.mobileNo+"\tDelivery Address"+OrderObj.deliveryAddress+"\tPinCode"+OrderObj.pinCode);
             if(num4==1)
             {
                 GrandTotal1 = paymentObj.CalculateCGST(num4, TotalPrice);
@@ -311,10 +327,14 @@ namespace DemoKartMainProgram
             }
             else if(num4==2)
             {
-                GrandTotal1 = paymentObj.CalculateCGST(num4, TotalPrice);
-                Console.WriteLine("Central GST is : " + GrandTotal1);
-                GrandTotal2 = paymentObj.CalculateSGST(num4, TotalPrice);
-                Console.WriteLine("State GST is : " + GrandTotal2);
+                double GrandTotal3 = paymentObj.CalculateCGST(num4, TotalPrice);
+                Console.WriteLine("Central GST is : " + GrandTotal3);
+                double GrandTotal4 = paymentObj.CalculateSGST(num4, TotalPrice);
+                Console.WriteLine("State GST is : " + GrandTotal4);
+            }
+            else
+            {
+                Console.WriteLine("Wrong Choice");
             }
 
 
@@ -323,4 +343,6 @@ namespace DemoKartMainProgram
         }
     }
 }
+
+
 
