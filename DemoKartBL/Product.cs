@@ -8,11 +8,15 @@ namespace DemoKartBL
 {
     public class Product
     {
-        public int productId;
-        public String productName;
-        public int quantity;
-        public double price;
+        //public int productId;
+        //public String productName;
+        //public int quantity;
+        //public double price;
         //Category categoryObj = new Category();
+        public int productId { get; set; }
+        public String productName { get; set; }
+        public int quantity { get; set; }
+        public double price { get; set; }
 
         public Product(string productName)
         {
